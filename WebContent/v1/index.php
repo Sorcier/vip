@@ -22,9 +22,9 @@ include 'language.php';
         
         <main>
             <article>
-                <header>
+                
                     <h2><?php echo $loc['page_h2'] ?></h2>
-                </header>
+                
                 <?php echo $loc['page_content'] ?>
             </article>
         </main>

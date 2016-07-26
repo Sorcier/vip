@@ -1,7 +1,7 @@
 @CHARSET "UTF-8";
 
 header {
-
+	border-bottom:0.1px solid rgba(185, 189, 189, .5);
 }
 
 #title_head_1{
@@ -82,21 +82,41 @@ nav ul li:first-child {
 
 /* MENU DEUXIEME NIVEAU */
 
-nav>ul>li>ul {
+ul>li>ul {
 	display: none;
 	position: absolute;
 	margin-top: 0px;
 	width: 150px;
 	color: black;	
-	margin-left: 0px;
+	background-color: #ffffff;
+    border: medium none;
+    text-align: center;
+    display: none;
+    font-size: 12px;
+    font-weight: 300;
+    margin: 0;
+    z-index: 2999;
+    padding-top: 20px;	
+}
+
+ul>li>ul li:last-child {
+	box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+ul>li>ul li {
+	box-shadow: 3px 0px 0 rgba(0, 0, 0, 0.1);
+	float: right;
+	padding: 0px 50px 10px 0;
+	width: 150px;
 }
 
 
 nav>ul>li:hover ul {
 	display: block;
 	list-style: none;
-		background-color: white;
-	box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+	background-color: white;
+	
 	
 }
 
