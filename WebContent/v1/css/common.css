@@ -1,0 +1,234 @@
+@CHARSET "UTF-8";
+
+header {
+
+}
+
+#title_head_1{
+	color: #b9bdbd;
+	float: left;
+    height: 39px;
+    line-height: 39px;
+    letter-spacing: 0;
+    margin-left: 15%;
+    font-family: 'Hind';
+    font-size: 14px;
+    font-weight:bold
+}
+
+#title_head_2{
+	color: #0eaed0;
+	height: 39px;
+    line-height: 39px;
+    letter-spacing: 0;
+    font-family: 'Hind';
+    font-size: 14px;
+    font-weight:bold;
+    padding-left: 10px;
+    
+}
+
+
+
+/* MENU COMMUN */
+
+nav {
+	background-color: white;
+}
+
+nav ul {
+	margin-top: 5px;
+	margin-bottom: 0px;
+	
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 14px;
+    font-weight: 700;
+    height: 27px;
+    line-height: 29px;
+    font-family: 'Hind';
+}
+
+nav ul li {
+	list-style: none;
+}
+
+nav ul li:hover {
+    
+}
+
+nav ul li:hover a {
+	color: #00afda;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: #414042;
+	padding: 28px;
+
+
+}
+
+/* MENU PREMIER NIVEAU */
+
+nav>ul>li {
+	display: inline-block;
+	margin-left: 25px;
+	
+}
+
+nav ul li:first-child {
+	margin-left: 0px;
+}
+
+/* MENU DEUXIEME NIVEAU */
+
+nav>ul>li>ul {
+	display: none;
+	position: absolute;
+	margin-top: 0px;
+	width: 150px;
+	color: black;	
+	margin-left: 0px;
+
+
+}
+
+
+nav>ul>li:hover ul {
+	display: block;
+	list-style: none;
+		background-color: white;
+	box-shadow: 3px 3px 0 rgba(0,0,0,0.1);
+	
+}
+
+#logo{
+	width: 10%;
+	height: auto;
+	transition: transform 2s;
+}
+
+#logo:hover{
+	transform: rotateZ(360deg);
+}
+
+
+
+
+body {
+	/* marge de 4px en haut */
+	margin: 4px 0px 0px 0px;
+	font-size: 20px;
+	font-family: 'Poiret One', cursive;
+}
+
+#page {
+	background-color: white;
+	width: 80%;
+	min-width: 400px;
+	max-width: 1800px;
+	/* Centrage bloc */
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 5px 5px 10px gray;
+	border-radius: 25px;
+}
+
+#content {
+	background-color: Fuchsia;
+}
+
+#left {
+	background-color: white;
+	float: left;
+	width: 20%;
+}
+
+#center {
+	background-color: white;
+	float: left;
+	width: 60%;
+	height: 1200px;
+}
+
+#right {
+	background-color: white;
+	float: right;
+	width: 20%;
+}
+
+footer {
+	background-color: orange;
+	clear: both;
+	border-radius: 0px 0px 25px 25px;
+	padding: 15px;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00a79d+0,ececec+100 */
+	background: #00a79d; /* Old browsers */
+	background: -moz-linear-gradient(left, #00a79d 0%, #ececec 100%);
+	/* FF3.6-15 */
+	background: -webkit-linear-gradient(left, #00a79d 0%, #ececec 100%);
+	/* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to right, #00a79d 0%, #ececec 100%);
+	/* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00a79d',
+		endColorstr='#ececec', GradientType=1); /* IE6-9 */
+}
+
+@media only screen and (max-width: 500px) {
+	body{
+	font-size:8px;
+	}
+	#page{
+	min-width: 0px;
+	}
+	#left{
+	float: none;
+	width: 100%;
+	}
+	#right{
+	float: none;
+	width: 100%;
+	}
+	#center{
+	float: none;
+	width: 100%;
+	}
+	nav ul{
+	
+	}
+}
+
+#inscriptionForm legend{
+	font-weight: bolder;
+	color: #F05525;
+}
+
+#inscriptionForm fieldset{
+	border-radius: 15px 0px 0px 0px;
+	margin-bottom: 15px;
+}
+
+#inscriptionForm label{
+	display: inline-block;
+	width: 150px;
+	color: #00A292;
+	font-weight: bolder;
+}
+
+#inscriptionForm input[type='submit']{
+	float: right;
+	margin-top: 30px;
+	background-color: #00A292;
+	border-radius: 5px;
+	font-size: 0.8em;
+	color: white;
+	cursor: pointer;
+	border: none;
+}
+
+#inscriptionForm label.mandatory:after, #inscriptionForm span.mandatory:after {
+	content: " *";
+	color: red;
+	font-weight: bold;
+}
