@@ -24,8 +24,7 @@ header {
     font-family: 'Hind';
     font-size: 14px;
     font-weight:bold;
-    padding-left: 10px;
-    
+    padding-left: 10px;    
 }
 
 
@@ -90,8 +89,6 @@ nav>ul>li>ul {
 	width: 150px;
 	color: black;	
 	margin-left: 0px;
-
-
 }
 
 
@@ -120,7 +117,7 @@ body {
 	/* marge de 4px en haut */
 	margin: 4px 0px 0px 0px;
 	font-size: 20px;
-	font-family: 'Poiret One', cursive;
+	font-family: 'Hind';
 }
 
 #page {
